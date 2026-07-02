@@ -1,0 +1,129 @@
+OWASP Top 10 (2021) Summary
+
+A01: Broken Access Control
+Occurs when users can perform actions outside their permissions.
+
+Example:
+A normal user accesses the admin dashboard.
+
+Prevention:
+- Role-based access control
+- Deny access by default
+- Validate permissions on the server
+
+---
+
+A02: Cryptographic Failures
+Sensitive information is exposed because of weak encryption or improper protection.
+
+Example:
+Passwords stored as plain text.
+
+Prevention:
+- HTTPS
+- Strong encryption
+- Secure password hashing
+
+---
+
+A03: Injection
+Untrusted user input is interpreted as commands.
+
+Example:
+SQL Injection
+
+Prevention:
+- Prepared Statements
+- Input validation
+- Parameterized queries
+
+---
+
+A04: Insecure Design
+Security was not considered during application design.
+
+Example:
+Weak password reset process.
+
+Prevention:
+- Threat modeling
+- Secure architecture
+- Security testing
+
+---
+
+A05: Security Misconfiguration
+Improper configuration exposes the application.
+
+Example:
+Default admin credentials.
+
+Prevention:
+- Remove default accounts
+- Disable debugging
+- Regular configuration reviews
+
+---
+
+A06: Vulnerable and Outdated Components
+Using software with known vulnerabilities.
+
+Example:
+Old versions of libraries.
+
+Prevention:
+- Update dependencies
+- Remove unused packages
+- Monitor vulnerabilities
+
+---
+
+A07: Identification and Authentication Failures
+Weak authentication allows attackers to compromise accounts.
+
+Example:
+Weak passwords.
+
+Prevention:
+- Multi-factor authentication
+- Strong password policy
+- Secure session management
+
+---
+
+A08: Software and Data Integrity Failures
+Applications trust unverified software or updates.
+
+Example:
+Downloading malicious updates.
+
+Prevention:
+- Verify integrity
+- Secure CI/CD
+- Digital signatures
+
+---
+
+A09: Security Logging and Monitoring Failures
+Security incidents go unnoticed.
+
+Example:
+Failed login attempts are not logged.
+
+Prevention:
+- Enable logging
+- Monitor suspicious activity
+- Incident response planning
+
+---
+
+A10: Server-Side Request Forgery (SSRF)
+The server fetches unintended resources.
+
+Example:
+Attacker forces server to access internal systems.
+
+Prevention:
+- Allowlists
+- Input validation
+- Restrict outbound requests
